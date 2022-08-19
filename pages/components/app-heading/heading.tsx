@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Heading, Box } from "@chakra-ui/react";
 import { HeadingMainText } from "./heading-main-text";
 
-export default function SiteHeading({
+export function SiteHeading({
   children,
   label,
 }: {

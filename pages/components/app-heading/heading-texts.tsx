@@ -15,7 +15,7 @@ export function HeadingText(props: TextProps) {
   );
 }
 
-HeadingText.Arian = function Arian(props: TextProps) {
+export function Arian(props: TextProps) {
   return (
     <HeadingText
       fontSize={"60"}
@@ -27,9 +27,9 @@ HeadingText.Arian = function Arian(props: TextProps) {
       {...props}
     />
   );
-};
+}
 
-HeadingText.Computing = function Computing(props: TextProps) {
+export function Computing(props: TextProps) {
   return (
     <HeadingText
       fontSize={"120"}
@@ -38,9 +38,9 @@ HeadingText.Computing = function Computing(props: TextProps) {
       {...props}
     />
   );
-};
+}
 
-HeadingText.Ampersand = function Ampersand(props: TextProps) {
+export function Ampersand(props: TextProps) {
   return (
     <HeadingText
       color={"blue.300"}
@@ -52,9 +52,9 @@ HeadingText.Ampersand = function Ampersand(props: TextProps) {
       {...props}
     />
   );
-};
+}
 
-HeadingText.EnglishServices = function EnglishServices(props: TextProps) {
+export function EnglishServices(props: TextProps) {
   return (
     <HeadingText
       fontSize={"112"}
@@ -63,4 +63,4 @@ HeadingText.EnglishServices = function EnglishServices(props: TextProps) {
       {...props}
     />
   );
-};
+}

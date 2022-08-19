@@ -1,33 +1,28 @@
 import React from "react";
-import { Center, Flex } from "@chakra-ui/react";
-import SiteHeading from "./app-heading/heading";
-import { HeadingText } from "./app-heading/heading-texts";
+import { Flex } from "@chakra-ui/react";
+import { Screen } from "./screen";
+import {
+  Arian,
+  Computing,
+  Ampersand,
+  EnglishServices,
+  SiteHeading,
+} from "./app-heading";
 
 export default function App() {
   return (
-    <Center>
-      <Flex
-        width={"100%"}
-        height={"100vh"}
-        flexDirection={"column"}
-        overflowY={"scroll"}
-      >
-        <SiteHeading label={"Arian's Computing and English Help Services"}>
-          <HeadingText.Arian ml={12}>Arian's </HeadingText.Arian>
-          <HeadingText.Computing>Computing</HeadingText.Computing>
-          <HeadingText.Ampersand ml={3}>& </HeadingText.Ampersand>
-          <HeadingText.EnglishServices ml={3}>
-            English Services
-          </HeadingText.EnglishServices>
-        </SiteHeading>
+    <Screen>
+      <SiteHeading label={"Arian's Computing and English Help Services"}>
+        <Arian ml={12}>Arian's </Arian>
+        <Computing>Computing</Computing>
+        <Ampersand ml={3}>& </Ampersand>
+        <EnglishServices ml={3}>English Services</EnglishServices>
+      </SiteHeading>
 
-        <Flex
-          height={"1000"}
-          background={`linear-gradient(90deg, #e8e2e2 0%, #fff 100%)`}
-        >
-          nayam
-        </Flex>
-      </Flex>
-    </Center>
+      <Flex
+        height={"1000"}
+        background={`linear-gradient(90deg, #e8e2e2 0%, #fff 100%)`}
+      ></Flex>
+    </Screen>
   );
 }
